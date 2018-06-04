@@ -1,5 +1,6 @@
 package com.rui.primary.array_algorithm;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -12,15 +13,15 @@ import java.util.Arrays;
 public class DelRepeatInArray {
     public static void main(String[] args) {
         //先初始化一个有序的数组
-        int resultSize=delRepeat();
-        System.out.println("最后结果:"+resultSize);
+//        int resultSize=delRepeat();
+//        System.out.println("最后结果:"+resultSize);
     }
 
     /**
      * 对有序数组进行去重
      * 返回去重后的数组的长度
      */
-    private static int delRepeat(){
+    private static void delRepeat(){
         int[] ints=new int[5];
         ints[0]=1;
         ints[1]=1;
@@ -57,6 +58,6 @@ public class DelRepeatInArray {
 //                ints[]
             }
         }
-        return 0;
+        System.out.println(Arrays.toString(ints));
     }
 }
